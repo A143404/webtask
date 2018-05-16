@@ -1,0 +1,15 @@
+{
+  "name": "es6webtask",
+  "version": "1.0.0",
+  "description": "webtask with shared modules",
+  "main": "hello.js",
+  "scripts": {
+    "deploy-wt-dev":"wt create hello.js -p agl-dev-au --bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pankaj",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.x"
+  }
+}
