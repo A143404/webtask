@@ -4,12 +4,19 @@
   "description": "webtask with shared modules",
   "main": "hello.js",
   "scripts": {
-    "deploy-wt-dev":"wt create hello.js -p agl-dev-au --bundle",
+    "deploy-hello-wt": "wt create hello.js -p agl-dev-au --bundle",
+    "deploy-express-wt": "wt create --name express-api -p agl-dev-au --bundle webtask-express-api.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pankaj",
   "license": "ISC",
   "dependencies": {
-    "lodash": "4.x"
+    "express": "^4.16.3",
+    "lodash": "4.x",
+    "webtask-tools": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
   }
 }
